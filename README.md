@@ -29,5 +29,5 @@ SETTING UP:
       
 
 RUN:
-- Use "make" to compile
-- Use "make results" after the compiling to launch the code and check the results
+- Type "make" command in the terminal to compile
+- Type "make results" in the terminal after the compiling to launch the code and check the results
