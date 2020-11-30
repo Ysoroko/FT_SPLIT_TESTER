@@ -14,12 +14,12 @@ CC				=	gcc
 
 CFLAGS			=	-Wall -Wextra -Werror
 
-SRC 			=	ft_compare_results.c \
+SRC 			=	ft_split.c \
+					ft_compare_results.c \
 					ft_mem_count.c \
 					ft_my_split.c \
 					ft_print.c \
 					ft_run_test.c \
-					ft_split.c \
 					main.c \
 
 AND				=	&&

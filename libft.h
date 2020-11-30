@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/28 17:48:42 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/11/28 17:48:42 by ysoroko          ###   ########.fr       */
+/*   Created: 2020/11/30 12:52:43 by ysoroko           #+#    #+#             */
+/*   Updated: 2020/11/30 12:52:43 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
-//for MacOS,  MALLOC_SIZE_FUNCTION Macro should be malloc_size 
+//for MacOS, MALLOC_SIZE_FUNCTION Macro should be malloc_size 
 //for Windows, MALLOC_SIZE_FUNCTION Macro should be _msize 
 //for GLIBC systems, MALLOC_SIZE_FUNCTION Macro should be malloc_usable_size
 #define MALLOC_SIZE_FUNCTION malloc_size
@@ -26,8 +26,6 @@
 //Includes
 #include <stdio.h>
 #include <stdlib.h>
-
-
 
 
 //Prototypes
@@ -72,7 +70,5 @@ int				ft_compare_results(char **your_str_tab, char **good_str_tab);
 #define BOLDMAGENTA "\033[1m\033[35m"      /* Bold Magenta */
 #define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
 #define BOLDWHITE   "\033[1m\033[37m"      /* Bold White */
-
-
 
 #endif
