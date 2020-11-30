@@ -5,9 +5,8 @@ A small tester for a troublesome function ft_split for s19 coding school
 
 Features:
 - 16 Tests for every possible situation your ft_split will ever encounter
-- Memory log which tracks how many bytes of memory you used for each test
-- The output your ft_split produces and the output it should produce next to each other
-- The tests compare your outpur with the right output and show you if your ft_split is working right
+- Memory log which tracks how many bytes of memory you used for each test and compares it to my ft_split
+- The tests compare your output with the right output and show you if your ft_split is working right
 
 ![](Images/img.png)
 
