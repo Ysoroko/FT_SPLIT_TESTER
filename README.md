@@ -16,6 +16,8 @@ SETTING UP:
 
 
 2) a) In Makefile, replace the first line next to SRCS by a path to your own ft_split.c file (Example: /Users/ysoroko/Cursus/libft/ft_split.c \)
+
+If you have any local functions your fr_split.c is using, add them as a separate line (Example: /Users/ysoroko/Cursus/libft/ft_strlen.c \)
    
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
