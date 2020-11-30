@@ -6,7 +6,7 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:48:32 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/11/30 14:34:52 by ysoroko          ###   ########.fr       */
+/*   Updated: 2020/11/30 14:55:47 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int		ft_wordcount(char *str, char sep)
 	else if (sep == 0)
 		return (1);
 	else if(str[0] == 0)
-		return (1);
+		return (0);
 	i = 1;
 	count = 0;
 	if (str[0] != sep)
