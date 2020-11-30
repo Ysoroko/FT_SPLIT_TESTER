@@ -6,11 +6,11 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:48:32 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/11/30 12:22:13 by ysoroko          ###   ########.fr       */
+/*   Updated: 2020/11/30 14:34:52 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft.h"
 
 static int		ft_wordcount(char *str, char sep)
 {
