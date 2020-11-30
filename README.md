@@ -16,9 +16,7 @@ SETTING UP:
 1) Git clone this repo anywhere you want
 
 
-2) a) Copy your own ft_split.c file inside the cloned folder or:
-   b) Inside cloned Makefile, change the "ft_split.c" to the path to your own ft_split (Example: /Users/jdoe/libft/ft_split.c)
-   /!\ Your ft_split.c must have #include "libft.h")
+2) a) Copy your own ft_split.c file inside the cloned folder
    
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
