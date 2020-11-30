@@ -16,7 +16,7 @@ SETTING UP:
 1) Git clone this repo anywhere you want
 
 
-2) a) Copy your own ft_split.c file inside the cloned folder
+2) a) In Makefile, replace the first line next to SRCS by a path to your own ft_split.c file (Example: /Users/ysoroko/Cursus/libft/ft_split.c \)
    
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
@@ -29,6 +29,5 @@ SETTING UP:
       
 
 RUN:
-- Use "make re" to recompile and launch the test
-- Use "make" to compile only
-- Use "make results" after the compiling to launch the code
+- Use "make" to compile
+- Use "make results" after the compiling to launch the code and check the results
