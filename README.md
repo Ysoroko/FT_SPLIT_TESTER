@@ -24,11 +24,11 @@ SETTING UP:
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
 
-   b) For GLIBC (Linux) terminal, in libft.h file line 19 should be changed to: #define MALLOC_SIZE_FUNCTION malloc_usable_size 
-      and line 23 should be changed to #include <malloc.h>
+   b) For GLIBC (Linux) terminal, in libft.h file line 19 should be changed to: "#define MALLOC_SIZE_FUNCTION malloc_usable_size"
+      and line 23 should be changed to "#include <malloc.h>"
       
-   c) For Windows terminal, in libft.h file line 19 should be changed to: #define MALLOC_SIZE_FUNCTION malloc_usable_size
-      and line 23 should be changed to #include <malloc.h>
+   c) For Windows terminal, in libft.h file line 19 should be changed to: "#define MALLOC_SIZE_FUNCTION malloc_usable_size"
+      and line 23 should be changed to "#include <malloc.h>"
       
 
 RUN:
