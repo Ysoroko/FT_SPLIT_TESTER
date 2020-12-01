@@ -39,6 +39,8 @@ RUN:
 --------------------------------------------------------------------------------------------------------------------------------------
 DON'T FORGET TO CHECK:
 
+-Your ft_split should never segfault. The tests will stop if they encounter a segfault and the remaining tests won't be ran
+
 -Protect all your malloc calls
 
 -Free each string in your tab and the tab itself if a malloc call returns 0 in the middle of your ft_split
