@@ -16,10 +16,10 @@ SETTING UP:
 
 
 2) a) In Makefile, replace the first line next to SRCS by a path to your own ft_split.c file.      
-      Example: /Users/ysoroko/Cursus/libft/ft_split.c \
+      Example: /Users/jdoe/libft/ft_split.c \
 
    b) If you have any local functions your fr_split.c is using, add them as a separate line.             
-      Example: /Users/ysoroko/Cursus/libft/ft_strlen.c \
+      Example: /Users/jdoe/libft/ft_strlen.c \
    
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
@@ -32,5 +32,15 @@ SETTING UP:
       
 
 RUN:
-- Type "make" command in the terminal to compile
-- Type "make results" in the terminal after the compiling to launch the code and check the results
+- Type "make" command in the terminal to compile and run the tests
+- Type "make log" in the terminal after the compiling to check the results without recompiling
+
+DON'T FORGET TO CHECK:
+
+-Protect all your malloc calls
+
+-Free each string in your tab and the tab itself if a malloc call returns 0 in the middle of your ft_split
+
+-The Norm & The compilation warnings
+
+-Declare all the functions (except for ft_split itself) as static
