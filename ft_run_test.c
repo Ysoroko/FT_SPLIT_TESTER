@@ -6,7 +6,7 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 19:10:54 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/11/28 19:10:54 by ysoroko          ###   ########.fr       */
+/*   Updated: 2020/11/30 17:34:08 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	ft_run_test(char *str, char sep, int *test)
 	char	**str_tab;
 	char	**good_str;
 
-	str_tab = ft_split(str,sep);
-	good_str = ft_my_split(str,sep);
+	str_tab = ft_split(str, sep);
+	good_str = ft_my_split(str, sep);
 
 	ft_print_test_number(test);
 	ft_print_string(str);

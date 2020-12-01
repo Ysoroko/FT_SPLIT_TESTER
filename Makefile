@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 19:44:45 by ysoroko           #+#    #+#              #
-#    Updated: 2020/11/28 19:44:45 by ysoroko          ###   ########.fr        #
+#    Updated: 2020/11/30 17:41:09 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,18 +28,18 @@ LAUNCH			=	./a.out
 
 
 
-all:		compile
+all:		run
 
-compile:	
-			$(CC) $(FLAGS) $(SRC)
+run:	
+			$(CC) $(FLAGS) $(SRC) $(AND) $(LAUNCH)
 
-results:	a.out
+log:		a.out
 			$(LAUNCH)
 
 clean:
 			rm a.out
 
-re:			clean compile results
+re:			clean run
 			
-.PHONY:		all clean compile results re
+.PHONY:		all clean log run
 
