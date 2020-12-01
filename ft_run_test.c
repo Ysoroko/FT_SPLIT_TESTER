@@ -12,7 +12,7 @@
 
 #include "ft.h"
 
-void	ft_run_test(char *str, char sep, int *test)
+int	ft_run_test(char *str, char sep, int *test)
 {
 	char	**str_tab;
 	char	**good_str;
@@ -29,4 +29,12 @@ void	ft_run_test(char *str, char sep, int *test)
 	ft_print_my_mem(good_str);
 	ft_print_ok_or_ko(str_tab, good_str);
 	ft_print_yellow_line();
+	if(ft_compare_results(str_tab, good_str) == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

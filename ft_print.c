@@ -15,18 +15,18 @@
 void	ft_print_header()
 {
 	printf(COLOR_YELLOW);
-	printf("\n\n--------------------------------------------------------------\n");
+	printf("\n\n------------------------------------------------------------------------------------------------------------------------------\n");
 	printf(BOLDMAGENTA);
-	printf("\t\tFT_SPLIT TESTER BY YSOROKO\n");
+	printf("\t\t\t\t\t\tFT_SPLIT TESTER BY YSOROKO\n");
 	printf(COLOR_YELLOW);
-	printf("--------------------------------------------------------------\n\n\n");
+	printf("------------------------------------------------------------------------------------------------------------------------------\n\n\n");
 }
 
 void	ft_print_test_number(int *test)
 {
 	//Print the test number
 	printf(BOLDMAGENTA);
-	printf("TEST %d \n\n", (*test)++);
+	printf("TEST %d/16 \n\n", (*test)++);
 }
 
 
@@ -148,7 +148,7 @@ void	ft_print_my_mem(char **str_tab)
 void	ft_print_yellow_line()
 {
 	printf(COLOR_YELLOW);
-	printf("--------------------------------------------------------------\n\n");
+	printf("------------------------------------------------------------------------------------------------------------------------------\n\n");
 }
 
 
@@ -164,4 +164,16 @@ void	ft_print_ok_or_ko(char **str, char **good_str)
 		printf(COLOR_GREEN);
 		printf("[OK]  \n\n");
 	}
+}
+
+void	ft_dont_forget(void)
+{
+	printf(BOLDMAGENTA);
+	printf("\nDon't forget:\n\n");
+	printf("* Your ft_split should never segfault. The tests will stop if they encounter a segfault and the remaining tests won't be ran\n");
+	printf("* Protect all your malloc calls\n");
+	printf("* Free each string in your tab and the tab itself if a malloc call returns 0 in the middle of your ft_split\n");
+	printf("* The Norm & Compilation Warnings\n");
+	printf("* Declare all the functions (except for ft_split itself) as static\n\n");
+	printf(COLOR_RESET);
 }

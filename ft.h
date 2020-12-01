@@ -32,7 +32,7 @@
 char			**ft_split(char *str, char charset);
 char			**ft_my_split(char *str, char charset);
 
-void			ft_run_test(char *str, char sep, int *test);
+int			ft_run_test(char *str, char sep, int *test);
 
 int				ft_mem_count(char **str_tab);
 
@@ -46,6 +46,7 @@ void			ft_print_mem(char **str_tab);
 void			ft_print_my_mem(char **str_tab);
 void			ft_print_yellow_line();
 void			ft_print_ok_or_ko(char **str, char **good_str);
+void			ft_dont_forget(void);
 
 int				ft_strcmp(char *s1, char *s2);
 int				ft_compare_results(char **your_str_tab, char **good_str_tab);
