@@ -35,6 +35,8 @@ RUN:
 - Type "make" command in the terminal to compile and run the tests
 - Type "make log" in the terminal after the compiling to check the results without recompiling
 
+
+
 DON'T FORGET TO CHECK:
 
 -Protect all your malloc calls
