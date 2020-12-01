@@ -10,7 +10,7 @@ Features:
 
 ![](Images/img.png)
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 SETTING UP:
 1) Git clone this repo anywhere you want
 
@@ -30,13 +30,13 @@ SETTING UP:
    c) For Windows terminal, in libft.h file line 19 should be changed to: "#define MALLOC_SIZE_FUNCTION malloc_usable_size"
       and line 23 should be changed to "#include <malloc.h>"
       
-
+--------------------------------------------------------------------------------------------------------------------------------------
 RUN:
 - Type "make" command in the terminal to compile and run the tests
 - Type "make log" in the terminal after the compiling to check the results without recompiling
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 DON'T FORGET TO CHECK:
 
 -Protect all your malloc calls
