@@ -6,22 +6,18 @@
 /*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 09:48:32 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/11/30 14:55:47 by ysoroko          ###   ########.fr       */
+/*   Updated: 2020/12/02 12:40:12 by ysoroko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft.h"
 
-static int		ft_wordcount(char *str, char sep)
+static int		ft_wordcount(char const *str, char sep)
 {
 	int i;
 	int count;
 
-	if (str == 0)
-		return (0);
-	else if (sep == 0)
-		return (1);
-	else if(str[0] == 0)
+	if (str == 0 || str[0] == 0)
 		return (0);
 	i = 1;
 	count = 0;
@@ -36,7 +32,7 @@ static int		ft_wordcount(char *str, char sep)
 	return (count);
 }
 
-static char		**ft_malloc(char *str, char sep)
+static char		**ft_malloc(char const *str, char sep)
 {
 	int		len;
 	char	**tab_str;
@@ -50,7 +46,7 @@ static char		**ft_malloc(char *str, char sep)
 	return (tab_str);
 }
 
-static int		ft_next_word_count(char *str, char sep, int i)
+static int		ft_next_word_count(char const *str, char sep, int i)
 {
 	int count;
 
@@ -67,20 +63,21 @@ static int		ft_next_word_count(char *str, char sep, int i)
 	return (count);
 }
 
-static void		ft_free(char **str_tab, int i)
+static char		**ft_free(char **str_tab, int i)
 {
 	int j;
 
 	j = 0;
-	while (j < i)
+	while (j < i && str_tab[j] != 0)
 	{
 		free(str_tab[j]);
 		j++;
 	}
 	free(str_tab);
+	return (0);
 }
 
-char			**ft_my_split(char *str, char charset)
+char			**ft_my_split(char const *str, char charset)
 {
 	int		s;
 	int		i;
@@ -97,10 +94,7 @@ char			**ft_my_split(char *str, char charset)
 	{
 		j = 0;
 		if (!(tab_str[i] = malloc(ft_next_word_count(str, charset, s) + 1)))
-		{
-			ft_free(tab_str, i);
-			return (0);
-		}
+			return (ft_free(tab_str, i));
 		while (str[s] != '\0' && str[s] == charset)
 			s++;
 		while (str[s] != '\0' && str[s] != charset)
@@ -110,3 +104,4 @@ char			**ft_my_split(char *str, char charset)
 	tab_str[i] = 0;
 	return (tab_str);
 }
+

@@ -12,7 +12,7 @@
 
 #include "ft.h"
 
-int	ft_run_test(char *str, char sep, int *test)
+int	ft_run_test(const char *str, char sep, int *test, int tab_len)
 {
 	char	**str_tab;
 	char	**good_str;
@@ -20,21 +20,35 @@ int	ft_run_test(char *str, char sep, int *test)
 	str_tab = ft_split(str, sep);
 	good_str = ft_my_split(str, sep);
 
-	ft_print_test_number(test);
+	ft_print_test_number(test, tab_len);
+	ft_print_ok_or_ko(str_tab, good_str);
 	ft_print_string(str);
 	ft_print_charset(sep);
 	ft_print_the_result(str_tab);
 	ft_print_my_result(good_str);
-	ft_print_mem(str_tab);
-	ft_print_my_mem(good_str);
-	ft_print_ok_or_ko(str_tab, good_str);
-	ft_print_yellow_line();
-	if(ft_compare_results(str_tab, good_str) == 0)
+	if (ft_mem_count(str_tab) != ft_mem_count(good_str))
 	{
+		ft_print_mem(str_tab);
+		ft_print_my_mem(good_str);
+		printf("Memory difference: %s[KO]\n\n", COLOR_YELLOW);
+	}
+	else if (ft_mem_count(str_tab) == ft_mem_count(good_str))
+	{
+		ft_print_mem(str_tab);
+		printf("Memory difference: [OK]\n\n");
+	}
+	ft_print_yellow_line();
+
+	if (ft_compare_results(str_tab, good_str) == 0)
+	{
+		free(str_tab);
+		free(good_str);
 		return (1);
 	}
 	else
 	{
+		free(str_tab);
+		free(good_str);
 		return (0);
 	}
 }

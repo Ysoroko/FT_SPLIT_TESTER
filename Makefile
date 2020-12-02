@@ -14,7 +14,7 @@ CC				=	gcc
 
 CFLAGS			=	-Wall -Wextra -Werror
 
-SRC 			=	/Users/ysoroko/Cursus/libft/ft_split.c \
+SRC 			=	/Users/ysoroko/Cursus/libft_0/ft_split.c \
 					ft_compare_results.c \
 					ft_mem_count.c \
 					ft_my_split.c \
@@ -42,4 +42,3 @@ clean:
 re:			clean run
 			
 .PHONY:		all clean log run
-

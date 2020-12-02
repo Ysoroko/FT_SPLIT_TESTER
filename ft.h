@@ -29,16 +29,16 @@
 
 
 //Prototypes
-char			**ft_split(char *str, char charset);
-char			**ft_my_split(char *str, char charset);
+char			**ft_split(const char  *str, char charset);
+char			**ft_my_split(const char *str, char charset);
 
-int			ft_run_test(char *str, char sep, int *test);
+int			ft_run_test(const char *str, char sep, int *test, int tab_len);
 
 int				ft_mem_count(char **str_tab);
 
 void			ft_print_header();
-void			ft_print_test_number(int *test);
-void			ft_print_string(char *str);
+void			ft_print_test_number(int *test, int tab_len);
+void			ft_print_string(const char *str);
 void			ft_print_charset(char sep);
 void			ft_print_the_result(char **str_tab);
 void			ft_print_my_result(char **str_tab);
@@ -48,7 +48,7 @@ void			ft_print_yellow_line();
 void			ft_print_ok_or_ko(char **str, char **good_str);
 void			ft_dont_forget(void);
 
-int				ft_strcmp(char *s1, char *s2);
+int				ft_strcmp(const char *s1, const char *s2);
 int				ft_compare_results(char **your_str_tab, char **good_str_tab);
 
 
