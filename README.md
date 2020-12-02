@@ -39,7 +39,7 @@ RUN:
 --------------------------------------------------------------------------------------------------------------------------------------
 DON'T FORGET TO CHECK:
 
--Your ft_split should never segfault. The tests will stop if they encounter a segfault and the remaining tests won't be ran
+-Your ft_split should never segfault. The tests will stop if they provoke a segfault and the remaining tests won't be ran
 
 -Protect all your malloc calls
 
