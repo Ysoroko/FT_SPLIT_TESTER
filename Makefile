@@ -6,7 +6,7 @@
 #    By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 19:44:45 by ysoroko           #+#    #+#              #
-#    Updated: 2020/11/30 17:41:09 by ysoroko          ###   ########.fr        #
+#    Updated: 2020/12/02 12:55:05 by ysoroko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC				=	gcc
 
 CFLAGS			=	-Wall -Wextra -Werror
 
-SRC 			=	/Users/ysoroko/Cursus/libft_0/ft_split.c \
+SRC 			=	/Users/jdoe/libft/ft_split.c \
 					ft_compare_results.c \
 					ft_mem_count.c \
 					ft_my_split.c \
