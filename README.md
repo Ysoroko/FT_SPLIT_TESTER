@@ -43,7 +43,7 @@ DON'T FORGET TO CHECK:
 
 -Your ft_split should never segfault. The tests will stop if they provoke a segfault and the remaining tests won't be ran
 
--Protect all your malloc calls
+-Protect all your malloc calls & don't forget to allocate the required place for '\0' and (null)
 
 -Free each string in your tab and the tab itself if a malloc call returns 0 in the middle of your ft_split
 
