@@ -1,5 +1,5 @@
 # FT_SPLIT_TESTER
-A small tester for a troublesome function ft_split for s19 coding school
+A complete tester for a troublesome function ft_split for s19 coding school.
 
 
 
