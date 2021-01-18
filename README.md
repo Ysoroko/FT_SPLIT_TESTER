@@ -14,7 +14,7 @@ Features:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 SETTING UP:
-1) Git clone this repo inside your libft folder containing your "ft_split.c" file
+1) Git clone this repo inside your libft folder containing your "ft_split.c" file (and any other .c files needed for your ft_split to work)
 
 
 2) Optionally, you can manually provide the path to your ft_split.c file in Makefile
