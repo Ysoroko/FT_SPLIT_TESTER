@@ -14,15 +14,11 @@ Features:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 SETTING UP:
-1) Git clone this repo anywhere you want
+1) Git clone this repo inside your libft folder containing your "ft_split.c" file
 
 
-2) a) In Makefile, replace the first line next to SRCS by a path to your own ft_split.c file.      
+2) Optionally, you can manually provide the path to your ft_split.c file in Makefile
       Example: /Users/jdoe/libft/ft_split.c \
-
-   b) If you have any local functions your fr_split.c is using, add them as a separate line.             
-      Example: /Users/jdoe/libft/ft_strlen.c \
-   
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
 
@@ -34,18 +30,20 @@ SETTING UP:
       
 --------------------------------------------------------------------------------------------------------------------------------------
 RUN:
-- Type "make" command in the terminal to compile and run the tests
+- Type "make" command in the terminal while in this tester's repo to compile and run the tests
 - Type "make log" in the terminal after the compiling to check the results without recompiling
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
-DON'T FORGET TO CHECK:
+DON'T FORGET TO CHECK BY YOURSELF:
 
 -Your ft_split should never segfault. The tests will stop if they provoke a segfault and the remaining tests won't be ran
 
 -Protect all your malloc calls & don't forget to add "+1" in your malloc for '\0' and (null)
 
 -Free each string in your tab and the tab itself if a malloc call returns 0 in the middle of your ft_split
+
+-This tester won't test the leaks in your ft_split, it's up to you
 
 -The Norm & The compilation warnings
 
