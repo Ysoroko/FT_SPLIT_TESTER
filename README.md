@@ -10,7 +10,7 @@ Features:
 - Memory log which tracks how many bytes of memory you used for each test and compares it to my ft_split
 - The tests compare your output with the right output and show you if your ft_split is working right
 
-![](Images/img.png)
+![](Images/gif.gif)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 SETTING UP:
