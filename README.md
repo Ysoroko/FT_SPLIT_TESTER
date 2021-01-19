@@ -21,7 +21,7 @@ SETTING UP:
 
 2) Optionally, you can manually provide the path to your ft_split.c (and other.c files it uses) in Makefile
 
-      Example: /Users/jdoe/libft/ft_split.c
+      Example: /Users/jdoe/libft/ft_split.c     or    /Users/jdoe/libft/*.c 
    
 3) a) For MacOs, ignore this part, everything is already set up for the tester to count the memory used.
 
