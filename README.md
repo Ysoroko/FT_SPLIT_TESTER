@@ -10,6 +10,8 @@ Features:
 - Memory log which tracks how many bytes of memory you used for each test and compares it to my ft_split
 - Shows you side by side the expected output and your output
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 ![](Images/gif.gif)
 
 --------------------------------------------------------------------------------------------------------------------------------------
