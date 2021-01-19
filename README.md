@@ -8,7 +8,7 @@ This tester covers more situations than the commonly used War Machine and Libft-
 Features:
 - 19 Tests for every possible situation your ft_split will ever encounter
 - Memory log which tracks how many bytes of memory you used for each test and compares it to my ft_split
-- The tests compare your output with the right output and show you if your ft_split is working right
+- Shows you side by side the expected output and your output
 
 ![](Images/gif.gif)
 
