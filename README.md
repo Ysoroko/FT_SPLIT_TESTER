@@ -1,5 +1,5 @@
 # FT_SPLIT_TESTER
-A complete tester for a troublesome function ft_split for s19 coding school.
+A complete tester for a troublesome function ft_split for s19/s42 coding school.
 
 This tester covers more situations than the commonly used War Machine and Libft-unit testers and better prepares your ft_split for the Moulinette.
 
