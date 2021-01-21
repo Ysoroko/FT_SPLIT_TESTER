@@ -5,7 +5,7 @@ This tester covers more situations than the commonly used War Machine and Libft-
 
 
 
-Features:
+### Features:
 - 19 Tests for every possible situation your ft_split will ever encounter
 - Memory log which tracks how many bytes of memory you used for each test and compares it to my ft_split
 - Shows you side by side the expected output and your output
@@ -15,7 +15,7 @@ Features:
 ![](Images/gif.gif)
 
 --------------------------------------------------------------------------------------------------------------------------------------
-SETTING UP:
+### Setting Up:
 1) Git clone this repo inside your libft folder containing your "ft_split.c" file (and any other .c files needed for your ft_split to work)
 
 
@@ -32,13 +32,13 @@ SETTING UP:
       and line 23 should be changed to "#include <malloc.h>"
       
 --------------------------------------------------------------------------------------------------------------------------------------
-RUN:
+### Run:
 - Type "make" command in the terminal while in this tester's repo to compile and run the tests
 - Type "make log" in the terminal after the compiling to check the results without recompiling
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
-DON'T FORGET TO CHECK BY YOURSELF:
+### Don't Forget To Check By Yourself:
 
 -Your ft_split should never segfault. The tests will stop if they provoke a segfault and the remaining tests won't be ran
 
