@@ -59,7 +59,7 @@ int main()
 
 
 	//TEST 10: |UNDEUXTROIS| with '_' as sep
-	tab[test-2] = ft_run_test("_UNDEUXTROIS_", '_', &test, tab_len);
+	tab[test-2] = ft_run_test("UNDEUXTROIS", '_', &test, tab_len);
 
 
 	//TEST 11: |U| with '_' as sep
