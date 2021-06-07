@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysoroko <ysoroko@student.42.fr>            +#+  +:+       +#+        */
+/*   By: cfabian <cfabian@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 17:41:39 by ysoroko           #+#    #+#             */
-/*   Updated: 2020/12/02 12:22:19 by ysoroko          ###   ########.fr       */
+/*   Updated: 2021/06/07 14:11:59 by cfabian          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ int main()
 	printf("Results:   ");
 	for(int j = 0; j <= tab_len; j++)
 	{
-		if (tab[j] == 1)
+		if (tab[j])
 		{
 			printf(COLOR_GREEN);
 			printf("[OK]   ");
